@@ -30,24 +30,24 @@ Each class contains 150–3000 images of leaves.
 
 
 Workflow Summary:
-🔹 1. Data Preparation
+ 1. Data Preparation
 Dataset originally flat (one folder per class)
 
 Split into train/ and val/ with 80/20 ratio
 
 Used only .jpg, .jpeg, .png formats
 
-🔹 2. Transformations
+ 2. Transformations
 Train: Random crop, flip, tensor conversion
 
 Validation: Resize, center crop, tensor conversion
 
-🔹 3. Model Architecture
+ 3. Model Architecture
 Based on ResNet18 (pretrained on ImageNet)
 
 Final layer modified to fit number of classes
 
-🔹 4. Training
+4. Training
 Optimizer: SGD with momentum
 
 Loss: CrossEntropyLoss
@@ -56,7 +56,7 @@ Epochs: 5 (can be increased)
 
 Best model saved based on validation accuracy
 
-🔹 5. Evaluation
+5. Evaluation
 Accuracy per epoch for both train and validation
 
 Optional visualization of predictions
